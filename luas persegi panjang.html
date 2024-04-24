@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="anya.css">
+    <meta charset="UTF-8">
+	<title>home</title>
+</head>
+<body>
+
+	<ul>
+		<li><a href="Home.html">Home</a><li>
+		<li><a href="Profile.html">Profile</a><li>
+		<li><a href="Gallery.html">Gallery</a><li>
+		<li><a href="luas jajar genjang.html">Luas Jajar Genjang</a><li>
+		<li><a href="luas persegi panjang.html">Luas Persegi Panjang</a><li>
+		<li><a href="luas persegi.html">Luas Persegi</a><li>
+		<li><a href="volume balok.html">Volume Belok</a><li>
+		<li><a href="volume kubus.html">Volume Kubus</a><li>
+	</ul>
+	
+    <h1>LUAS PERSEGI PANJANG</h1>
+<label>Sisi 1:</label>
+	<input type="text" id="sisi1">
+	<br>
+<label>Sisi 2:</label>
+	<input type="text" id="sisi2">
+	<br>
+	<p id="hasil"></p>
+<button onclick="tampilkanHasil()">Hasil</button>
+<button onclick="location.reload()">Refresh</button>
+<hr>
+<a href="home.html">kembali</a>
+</body>
+<script>
+function tampilkanHasil(){
+    var sisi1 = document.getElementById("sisi1").value;
+	var sisi2 = document.getElementById("sisi2").value;
+	var hasil = sisi1 * sisi2
+	let data = document.getElementById('hasil').innerHTML=hasil
+}
+</script>
+</html>
